@@ -89,7 +89,7 @@ export default () => {
                     return false
                 }
                 if (el.source && el.target) {
-                    return el.source === el.id || el.target === el.id;
+                    return el.source !== el.id || el.target !== el.id;
                 }
                 return true;
             })
